@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content - EventDebugger30</name>
+	<author>Daniel Eliasson (joomla@stilero.com)</author>
+	<creationDate>2012-dec-05</creationDate>
+	<copyright>Copyright (c) 2012-dec-05 Stilero Webdesign (www.stilero.com). All rights reserved.</copyright>
+	<authorEmail>joomla@stilero.com</authorEmail>
+	<authorUrl>www.stilero.com</authorUrl>
+	<version>1.0</version>
+	<license>GPLv2</license>
+	<description>Description</description>
+	<files>
+		<filename plugin="eventdebugger30">eventdebugger30.php</filename>
+                <folder>eventdebugger30</folder>
+	</files>
+	<languages folder="language">
+            <language tag="en-GB">en-GB.plg_content_eventdebugger30.ini</language>
+            <language tag="en-GB">en-GB.plg_content_eventdebugger30.sys.ini</language>
+        </languages>
+        <config>
+            <fields name="params">
+                    <fieldset name="settings" label="PLG_CONTENT_EVENTDEBUGGER30_SETTINGS">
+                            <field name="custom_field" type="customfieldname" default="" label="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME" description="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME_DESC"/>
+                            <field name="param_name" type="text"  default="" label="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME" description="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME_DESC"/>
+                            <field name="param_name2" type="radio" default="1" label="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME2" description="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME2_DESC">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                            </field>
+                            <field type="spacer" default="PLG_CONTENT_EVENTDEBUGGER30_SPACER"/>
+                    </fieldset>
+                    <fieldset name="other" label="PLG_CONTENT_EVENTDEBUGGER30_FIELDSET">
+                            <field name="param_name" type="text"  default="" label="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME" description="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME_DESC"/>
+                            <field name="param_name2" type="radio" default="1" label="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME2" description="PLG_CONTENT_EVENTDEBUGGER30_PARAMNAME2_DESC">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                            </field>
+                            <field type="spacer" default="PLG_CONTENT_EVENTDEBUGGER30_SPACER"/>
+                    </fieldset>
+            </fields>
+        </config>
+	<administration>
+            <languages folder="language">
+                <language tag="en-GB">en-GB.plg_content_eventdebugger30.ini</language>
+                <language tag="en-GB">en-GB.plg_content_eventdebugger30.sys.ini</language>
+	    </languages>
+	</administration>
+</extension>
